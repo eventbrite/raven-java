@@ -11,6 +11,21 @@
     <name>raven-java</name>
     <description>Java Raven client and log4j appender.</description>
 
+    <distributionManagement>
+        <!-- use the following if you're not using a snapshot version. -->
+        <repository>
+            <id>eb-nexus-releases</id>
+            <name>Eventbrite Nexus Releases</name>
+            <url>http://packages/nexus/content/repositories/releases</url>
+        </repository>
+        <!-- use the following if you ARE using a snapshot version. -->
+        <snapshotRepository>
+            <id>eb-nexus-snapshots</id>
+            <name>Eventbrite Nexus Snapshots</name>
+            <url>http://packages/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>commons-lang</groupId>
